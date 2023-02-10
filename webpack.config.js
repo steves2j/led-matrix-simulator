@@ -1,31 +1,51 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index',
+  entry: './src/index.tsx',
   output: {
-    path: './dist/',
+    path: __dirname +'/dist/',
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['', '.json', '.ts', '.tsx', '.js', '.jsx']
+    extensions: ['.json', '.ts', '.tsx', '.js', '.jsx','...']
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx/,
-        loader: 'babel'
+        use: 'babel-loader'
       },
       {
         test: /\.tsx?$/,
-        loader: 'ts'
+        use: {
+          loader: 'ts-loader',
+          //options: {
+          //  compilerOptions: {
+          //  noEmit: false, // this option will solve the issue
+          // },
+          //}
+        },
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.ts?$/,
+        use: {
+          loader: 'ts-loader',
+          //options: {
+          //  compilerOptions: {
+          //  noEmit: false, // this option will solve the issue
+          // },
+          //}
+        },
+        exclude: /node_modules/,
       },
       {
         test: /\.html$/,
-        loader: 'html'
+        use: 'html-loader'
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css']
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
@@ -35,7 +55,12 @@ module.exports = {
     })
   ],
 
-  node: {
-    fs: 'empty'
-  }
+
+    resolve: {
+      fallback: {
+        fs: false
+      }
+    },
+    mode: 'development'
+
 };

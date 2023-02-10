@@ -5,25 +5,24 @@
     "@types/core-js": "^0.9.43",
     "@types/node": "^6.0.92",
     "babel-core": "^6.18.2",
-    "babel-loader": "^9.1.2",
+    "babel-loader": "^6.2.8",
     "babel-plugin-transform-react-jsx": "^6.8.0",
     "babel-preset-es2015": "^6.18.0",
     "css-loader": "^0.26.0",
     "exports-loader": "^0.6.3",
     "html-loader": "^0.4.4",
-    "html-webpack-plugin": "^5.5.0",
+    "html-webpack-plugin": "^2.24.1",
     "led-matrix": "file:../led-matrix",
     "matrix-display-store": "file:../matrix-display-store",
     "preact": "^6.4.0",
     "style-loader": "^0.13.1",
-    "ts-loader": "^9.4.2",
-    "typescript": "^4.9.5",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
+    "ts-loader": "^3.1.1",
+    "typescript": "^2.6.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
-    "build": "tsc && webpack",
+    "build": "webpack",
     "dev": "webpack-dev-server --content-base public/"
   }
 }

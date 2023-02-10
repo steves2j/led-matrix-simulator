@@ -1,12 +1,18 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "CommonJS",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true,
-    "target": "es5",
+    "declaration": true,
+    "moduleResolution": "node",
+    "rootDir": ".",
     "jsx": "react",
-    "jsxFactory": "h"
-  }
+    "jsxFactory": "h",
+    "target": "es5",
+    "skipLibCheck": true
+  },
+  
+  "exclude": ["node_modules"]
 }

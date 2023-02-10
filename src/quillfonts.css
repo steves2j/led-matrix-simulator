@@ -1,0 +1,61 @@
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='Classic']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='Classic']::before
+{
+  content: 'Classic';
+  font-family: 'Times New Roman';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='OrgDot']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='OrgDot']::before
+{
+  content: 'Org Dot';
+  font-family: 'Arial';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='PicoPixel']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='PicoPixel']::before
+{
+  content: 'Pico Pixel';
+  font-family: 'Times New Roman';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='Tiny']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='Tiny']::before
+{
+  content: 'Tiny';
+  font-family: 'Times New Roman';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='TomThumb']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='TomThumb']::before
+{
+  content: 'Tom Thumb';
+  font-family: 'Times New Roman';
+}
+
+/****************************************************
+Set the font-family content used for the HTML content.
+*****************************************************/
+.ql-font-OrgDot {
+  font-family: 'Arial';
+}
+
+.ql-font-Classic {
+  font-family: 'Times New Roman';
+}
+
+.ql-font-OrgDot {
+    font-family: 'Arial';
+}
+
+.ql-font-PicoPixel {
+font-family: 'Times New Roman';
+}
+
+.ql-font-Tiny {
+font-family: 'Arial';
+}
+
+.ql-font-TomThumb {
+font-family: 'Times New Roman';
+}
